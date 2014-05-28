@@ -1,0 +1,34 @@
+{
+  "name": "resolve-source-map",
+  "version": "0.0.1",
+  "description": "Simple utility to resolve source maps.",
+  "main": "./package/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/christianbradley/resolve-source-map"
+  },
+  "keywords": [
+    "resolve",
+    "sourcemap",
+    "source",
+    "map"
+  ],
+  "author": "Christian Bradley <christianbradley@gmail.com> (https://github.com/christianbradley)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christianbradley/resolve-source-map/issues"
+  },
+  "dependencies": {
+    "source-map": "~0.1.33"
+  },
+  "devDependencies": {
+    "coffee": "0.0.1",
+    "async": "~0.9.0"
+  },
+  "bin": {
+    "resolve-source-map": "./bin/cli.coffee"
+  }
+}
