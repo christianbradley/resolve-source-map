@@ -1,11 +1,12 @@
 {
   "name": "resolve-source-map",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple utility to resolve source maps.",
   "main": "./package/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "homepage": "http://github.com/christianbradley/resolve-source-map",
   "repository": {
     "type": "git",
     "url": "git://github.com/christianbradley/resolve-source-map"
@@ -22,10 +23,10 @@
     "url": "https://github.com/christianbradley/resolve-source-map/issues"
   },
   "dependencies": {
-    "source-map": "~0.1.33"
+    "source-map": "~0.1.33",
+    "coffee-script": "~1.7.1"
   },
   "devDependencies": {
-    "coffee": "0.0.1",
     "async": "~0.9.0"
   },
   "bin": {
