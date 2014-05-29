@@ -3,9 +3,21 @@ resolve-source-map
 
 A simple utility to resolve source maps.
 
+Dependencies
+--------------------------------------------------------------------------------
+
+### CoffeeScript
+
+To use the executable, the `coffee` command from the `coffee-script` package must be available:
+
+```sh
+npm install coffee-script -g
+```
+
 Installation
 --------------------------------------------------------------------------------
 
+### Install resolve-source-map
 For [nodejs] via [npm]:
 
 ```sh
