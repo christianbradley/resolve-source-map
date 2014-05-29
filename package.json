@@ -4,7 +4,7 @@
   "description": "Simple utility to resolve source maps.",
   "main": "./package/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cake test"
   },
   "homepage": "http://github.com/christianbradley/resolve-source-map",
   "repository": {

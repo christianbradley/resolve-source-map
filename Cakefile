@@ -31,13 +31,17 @@ test = (done) ->
   exec "coffee --literate README.md", done
 
 task 'compile', ->
-  compile (error) -> throw error if error?
+  compile (error) ->
+    throw error if error?
 
 task 'link', ->
-  async.series [linkToGlobal, linkLocally], (error) -> throw error if error?
-  
+  async.series [linkToGlobal, linkLocally], (error) ->
+    throw error if error?
+
+task 'test', ->
+  async.series [compile, linkToGlobal, linkLocally, test], (error) ->
+    throw error if error?
+
 task 'build', ->
   async.series [compile, linkToGlobal, linkLocally, test], (error) ->
-    if error
-      logger.error error
-      process.exit 1
+    throw error if error?
