@@ -1,6 +1,6 @@
 {
   "name": "resolve-source-map",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple utility to resolve source maps.",
   "main": "./package/index.js",
   "scripts": {
